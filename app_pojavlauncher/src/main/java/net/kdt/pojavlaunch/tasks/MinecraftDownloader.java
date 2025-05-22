@@ -67,19 +67,8 @@ public class MinecraftDownloader {
     public void start(@Nullable Activity activity, @Nullable JMinecraftVersionList.Version version,
                       @NonNull String realVersion, // this was there for a reason
                       @NonNull AsyncMinecraftDownloader.DoneListener listener) {
-        if(activity != null){
-            isLocalProfile = Tools.isLocalProfile(activity);
-            Tools.switchDemo(Tools.isDemoProfile(activity));
-        } else {
-            isLocalProfile = true;
-            Tools.switchDemo(true);
-        }
-
         sExecutorService.execute(() -> {
             try {
-                if(isLocalProfile){
-                    throw new RuntimeException("Download failed. Please make sure you are logged in with a Microsoft Account.");
-                }
                 downloadGame(activity, version, realVersion);
                 listener.onDownloadDone();
             }catch (UnknownHostException e){
