@@ -221,6 +221,8 @@ public class JREUtils {
             }
             if(LOCAL_RENDERER.equals("opengles_mobileglues")){
                 envMap.put("MG_DIR_PATH", Tools.DIR_DATA + "/MobileGlues");
+                envMap.put("LIBGL_ES", "3");
+                envMap.put("POJAVEXEC_EGL","libmobileglues.so");
             }
         }
         if(LauncherPreferences.PREF_BIG_CORE_AFFINITY) envMap.put("POJAV_BIG_CORE_AFFINITY", "1");
