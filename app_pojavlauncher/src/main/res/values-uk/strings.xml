@@ -30,7 +30,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">Очищення файлів кешу</string>
     <string name="mcl_launch_downloading">Завантаження %s</string>
-    <string name="mcl_launch_downloading_progress">"Завантаження %s (%.2f МБ / %.2f МБ)"</string>
+    <string name="mcl_launch_downloading_progress">"Завантаження %1$s (%2$.2f МБ / %3$.2f МБ)"</string>
     <string name="mcl_launch_download_assets">Підготовка до завантаження ресурсів</string>
     <string name="mcl_options">Налаштування</string>
     <string name="mcl_option_customcontrol">Користувацьке керування</string>
@@ -154,8 +154,8 @@
     <string name="customctrl_swipeable">Можна перегорнути</string>
     <string name="customctrl_forward_lock">Передній замок</string>
     <string name="customctrl_absolute_tracking">Абсолютне відстеження пальців</string>
-    <string name="memory_warning_msg">Поточна кількість вільної оперативної пам\'яті (%d) менша, ніж виділена оперативна пам\'ять (%d), що може призвести до збоїв. Змініть кількість вільної оперативної пам\'яті, якщо гра виходить з ладу.</string>
-    <string name="address_memory_warning_msg">Поточний обсяг вільного адресного простору оперативної пам’яті (%d) менший за виділену оперативну пам’ять (%d), що призведе до збоїв. Змініть розподіл, якщо гра виходить з ладу.</string>
+    <string name="memory_warning_msg">Поточна кількість вільної оперативної пам\'яті (%1$d) менша, ніж виділена оперативна пам\'ять (%2$d), що може призвести до збоїв. Змініть кількість вільної оперативної пам\'яті, якщо гра виходить з ладу.</string>
+    <string name="address_memory_warning_msg">Поточний обсяг вільного адресного простору оперативної пам’яті (%1$d) менший за виділену оперативну пам’ять (%2$d), що призведе до збоїв. Змініть розподіл, якщо гра виходить з ладу.</string>
     <string name="mcl_memory_allocation">Виділення пам\'яті</string>
     <string name="mcl_memory_allocation_subtitle">Контролює, скільки пам’яті надається Minecraft.</string>
     <string name="multirt_runtime_corrupt">Середовище виконання Java пошкоджено</string>
@@ -294,10 +294,10 @@
     <string name="search_modpack_no_result">Пакети модів не знайдено</string>
     <string name="search_modpack_error">Не вдалося знайти пакети модів</string>
     <string name="search_modpack_download_error">Не вдалося завантажити метадані пакета модів</string>
-    <string name="modpack_download_downloading_metadata">Завантаження метаданих пакета модів (%.2f МБ / %.2f МБ)</string>
-    <string name="modpack_download_downloading_mods">Завантаження модів (%.2f МБ / %.2f МБ)</string>
-    <string name="modpack_download_downloading_mods_fc">Завантаження модів (Файл %d з %d)</string>
-    <string name="modpack_download_applying_overrides">Застосування перевизначень (%d/%d)</string>
+    <string name="modpack_download_downloading_metadata">Завантаження метаданих пакета модів (%1$.2f МБ / %2$.2f МБ)</string>
+    <string name="modpack_download_downloading_mods">Завантаження модів (%1$.2f МБ / %2$.2f МБ)</string>
+    <string name="modpack_download_downloading_mods_fc">Завантаження модів (Файл %1$d з %2$d)</string>
+    <string name="modpack_download_applying_overrides">Застосування перевизначень (%1$d/%2$d)</string>
     <string name="modpack_install_notification_title">Установлювач пакета модів Pojav</string>
     <string name="modpack_install_notification_success">Натисніть тут, щоб завершити встановлення пакета модів</string>
     <string name="modpack_install_notification_data_not_available">Не вдалося завантажити інформацію про завантажувач модів</string>
@@ -337,8 +337,8 @@
     <string name="exception_failed_to_unpack_jre17">Не вдалося установити JRE 17</string>
     <string name="newdl_starting">Зчитування метаданих гри…</string>
     <string name="newdl_downloading_metadata">Завантаження метаданих гри (%s)</string>
-    <string name="newdl_downloading_game_files">Завантаження гри… (%d/%d, %.2f МБ/с)</string>
-    <string name="newdl_downloading_game_files_size">Завантаження гри… (%.2f/%.2f МБ, %.2f МБ/с)</string>
+    <string name="newdl_downloading_game_files">Завантаження гри… (%1$d/%2$d, %3$.2f МБ/с)</string>
+    <string name="newdl_downloading_game_files_size">Завантаження гри… (%1$.2f/%2$.2f МБ, %3$.2f МБ/с)</string>
     <string name="cropper_title">Виберіть зображення регіону</string>
     <string name="cropper_lock_vertical">V. lock</string>
     <string name="cropper_lock_horizontal">H. lock</string>
@@ -391,7 +391,7 @@
     <string name="bta_installer_available_versions">Підтримуванні версії «Better than Adventure!»</string>
     <string name="bta_installer_untested_versions">Нетестовані версії «Better than Adventure!»</string>
     <string name="bta_installer_nightly_versions">Нічні збірки «Better than Adventure!»</string>
-    <string name="newdl_extracting_native_libraries">Екстракція нативних бібліотек (%d/%d)</string>
+    <string name="newdl_extracting_native_libraries">Екстракція нативних бібліотек (%1$d/%2$d)</string>
     <string name="toast_not_available_demo">Це недоступно в деморежимі</string>
     <string name="preference_renderer_mobileglues_settings">Налаштування промальовування MobileGlues </string>
     <string name="mg_renderer_glsl_cache">Макс. розмір кешу GLSL</string>

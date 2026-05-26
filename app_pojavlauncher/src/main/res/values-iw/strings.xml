@@ -30,7 +30,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">מנקה קבצי מטמון</string>
     <string name="mcl_launch_downloading">מוריד %s</string>
-    <string name="mcl_launch_downloading_progress">"מתקין %s (%.2f MB / %.2f MB)"</string>
+    <string name="mcl_launch_downloading_progress">"מתקין %1$s (%2$.2f MB / %3$.2f MB)"</string>
     <string name="mcl_launch_download_assets">מתכונן להורדת משאבים</string>
     <string name="mcl_options">אפשרויות</string>
     <string name="mcl_option_customcontrol">פקדים מותאמים אישית</string>
@@ -146,8 +146,8 @@
     <string name="customctrl_passthru">עכבר עובר דרך</string>
     <string name="customctrl_swipeable">ניתן להחלקה</string>
     <string name="customctrl_absolute_tracking">מעקב אצבעות מוחלט</string>
-    <string name="memory_warning_msg">הכמות הנוכחית של RAM פנוי (%d) נמוכה מכמות ה-RAM שהוקצתה (%d), מה שעלול לגרום למשחק לקרוס. הנך מתבקש לשנות את ההקצאה במידה והמשחק קורס.</string>
-    <string name="address_memory_warning_msg">כמות שטח ה-RAM הפנוי הנוכחית (%d) נמוכה משטח ה-RAM המוקצה (%d), מה שיגרום לקריסות. יש לשנות את ההקצאה אם המשחק קורס.</string>
+    <string name="memory_warning_msg">הכמות הנוכחית של RAM פנוי (%1$d) נמוכה מכמות ה-RAM שהוקצתה (%2$d), מה שעלול לגרום למשחק לקרוס. הנך מתבקש לשנות את ההקצאה במידה והמשחק קורס.</string>
+    <string name="address_memory_warning_msg">כמות שטח ה-RAM הפנוי הנוכחית (%1$d) נמוכה משטח ה-RAM המוקצה (%2$d), מה שיגרום לקריסות. יש לשנות את ההקצאה אם המשחק קורס.</string>
     <string name="mcl_memory_allocation">הקצאת זיכרון</string>
     <string name="mcl_memory_allocation_subtitle">שולט בכמה זיכרון ניתן ל מיינקראפט.</string>
     <string name="multirt_runtime_corrupt">Java Runtime פגומה</string>
@@ -280,10 +280,10 @@
     <string name="search_modpack_no_result">לא נמצאו modpacks</string>
     <string name="search_modpack_error">נכשל במציאת modpacks</string>
     <string name="search_modpack_download_error">מכל בהורדת modpack metadata</string>
-    <string name="modpack_download_downloading_metadata">הורדת metadata של modpack (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods">מוריד מודים (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods_fc">מוריד מודים (קובץ %d מתוך %d)</string>
-    <string name="modpack_download_applying_overrides">החלת עקיפות (%d/%d)</string>
+    <string name="modpack_download_downloading_metadata">הורדת metadata של modpack (%1$.2f MB / %2$.2f MB)</string>
+    <string name="modpack_download_downloading_mods">מוריד מודים (%1$.2f MB / %2$.2f MB)</string>
+    <string name="modpack_download_downloading_mods_fc">מוריד מודים (קובץ %1$d מתוך %2$d)</string>
+    <string name="modpack_download_applying_overrides">החלת עקיפות (%1$d/%2$d)</string>
     <string name="modpack_install_notification_title">מתקין modpack של pojav</string>
     <string name="modpack_install_notification_success">לחץ כאן כדי לסיים את התקנת ה modpack</string>
     <string name="modpack_install_notification_data_not_available">נכשל בהורדת מידע על mod loader</string>
@@ -323,8 +323,8 @@
     <string name="exception_failed_to_unpack_jre17">נכשלה ההתקנה של JRE 17</string>
     <string name="newdl_starting">קורא metadata של משחק…</string>
     <string name="newdl_downloading_metadata">מוריד metadata של משחק</string>
-    <string name="newdl_downloading_game_files">מוריד את המשחק… (%d/%d, %.2f MB/s)</string>
-    <string name="newdl_downloading_game_files_size">מוריד את המשחק… (%.2f/%.2f MB, %.2f MB/s)</string>
+    <string name="newdl_downloading_game_files">מוריד את המשחק… (%1$d/%2$d, %3$.2f MB/s)</string>
+    <string name="newdl_downloading_game_files_size">מוריד את המשחק… (%1$.2f/%2$.2f MB, %3$.2f MB/s)</string>
     <string name="cropper_title">בחירת אזור תמונה</string>
     <string name="cropper_lock_vertical">נעילה אנכית</string>
     <string name="cropper_lock_horizontal">נעילה אופקית</string>
@@ -370,7 +370,7 @@
     <string name="bta_installer_available_versions">Supported BTA versions</string>
     <string name="bta_installer_untested_versions">Untested BTA versions</string>
     <string name="bta_installer_nightly_versions">Nightly BTA versions</string>
-    <string name="newdl_extracting_native_libraries">חילוץ ספריות מקוריות (%d/%d)</string>
+    <string name="newdl_extracting_native_libraries">חילוץ ספריות מקוריות (%1$d/%2$d)</string>
     <string name="toast_not_available_demo">זה לא זמין במצב demo</string>
     <string name="preference_renderer_mobileglues_settings">הגדרות רינדור MobileGlues</string>
     <string name="mg_renderer_glsl_cache">גודל מטמון GLSL מקסימלי</string>

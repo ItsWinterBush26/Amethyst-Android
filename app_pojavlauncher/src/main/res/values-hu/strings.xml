@@ -30,7 +30,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">A gyorsítótárazott fájlok törlése</string>
     <string name="mcl_launch_downloading">Letöltés%s</string>
-    <string name="mcl_launch_downloading_progress">"Downloading %s (%.2f MB / %.2f MB)
+    <string name="mcl_launch_downloading_progress">"Downloading %1$s (%2$.2f MB / %3$.2f MB)
 
 Azonosító (Kulcs): mcl_indítás_letöltés_folyamatban
 mcl_indítás_letöltés_folyamatban"</string>
@@ -154,8 +154,8 @@ mcl_indítás_letöltés_folyamatban"</string>
     <string name="customctrl_swipeable">Csúsztatható</string>
     <string name="customctrl_forward_lock">Előre zár</string>
     <string name="customctrl_absolute_tracking">Abszolút ujj-lekövetés</string>
-    <string name="memory_warning_msg">A jelenlegi szabad memória (%d) kevesebb a kiosztottnál (%d), ami kifagyásokhoz vezethet. Változtass a kiosztáson ha ez történik.</string>
-    <string name="address_memory_warning_msg">A jelenlegi szabad memória (%d) kevesebb a kiosztottnál (%d), ami kifagyásokhoz vezethet. Változtass a kiosztáson ha ez történik.</string>
+    <string name="memory_warning_msg">A jelenlegi szabad memória (%1$d) kevesebb a kiosztottnál (%2$d), ami kifagyásokhoz vezethet. Változtass a kiosztáson ha ez történik.</string>
+    <string name="address_memory_warning_msg">A jelenlegi szabad memória (%1$d) kevesebb a kiosztottnál (%2$d), ami kifagyásokhoz vezethet. Változtass a kiosztáson ha ez történik.</string>
     <string name="mcl_memory_allocation">Memória kiosztás</string>
     <string name="mcl_memory_allocation_subtitle">Szabályozza mennyi memória legyen kiosztva a Minecraft nak.</string>
     <string name="multirt_runtime_corrupt">Sérült Java Runtime</string>
@@ -294,10 +294,10 @@ mcl_indítás_letöltés_folyamatban"</string>
     <string name="search_modpack_no_result">Modpackok nem találhatóak</string>
     <string name="search_modpack_error">Modpackok keresése sikertelen</string>
     <string name="search_modpack_download_error">Modpack metaadatának letöltése sikertelen</string>
-    <string name="modpack_download_downloading_metadata">Modpack metaadatának letöltése (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods">Modok letöltése (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods_fc">Modok letöltése (%d a %d-ból/ből)</string>
-    <string name="modpack_download_applying_overrides">Felülbírások alkalmazása (%d/%d)</string>
+    <string name="modpack_download_downloading_metadata">Modpack metaadatának letöltése (%1$.2f MB / %2$.2f MB)</string>
+    <string name="modpack_download_downloading_mods">Modok letöltése (%1$.2f MB / %2$.2f MB)</string>
+    <string name="modpack_download_downloading_mods_fc">Modok letöltése (%1$d a %2$d-ból/ből)</string>
+    <string name="modpack_download_applying_overrides">Felülbírások alkalmazása (%1$d/%2$d)</string>
     <string name="modpack_install_notification_title">\"Ametiszt\" Modpack telepítő</string>
     <string name="modpack_install_notification_success">Koppints ide a modpackok telepítésének befejezéséhez</string>
     <string name="modpack_install_notification_data_not_available">Mod betöltő információinak letöltése sikertelen</string>
@@ -337,8 +337,8 @@ mcl_indítás_letöltés_folyamatban"</string>
     <string name="exception_failed_to_unpack_jre17">JRE 17 telepítése sikertelen</string>
     <string name="newdl_starting">Játék metaadatának beolvasása…</string>
     <string name="newdl_downloading_metadata">Játék metaadatának letöltése (%s)</string>
-    <string name="newdl_downloading_game_files">Játék letöltése… (%d/%d, %.2f MB/mp)</string>
-    <string name="newdl_downloading_game_files_size">Játék letöltése… (%.2f/%.2f MB, %.2f MB/mp)</string>
+    <string name="newdl_downloading_game_files">Játék letöltése… (%1$d/%2$d, %3$.2f MB/mp)</string>
+    <string name="newdl_downloading_game_files_size">Játék letöltése… (%1$.2f/%2$.2f MB, %3$.2f MB/mp)</string>
     <string name="cropper_title">Kép régiójának kiválasztása</string>
     <string name="cropper_lock_vertical">V. zár</string>
     <string name="cropper_lock_horizontal">H. zár</string>
@@ -391,7 +391,7 @@ mcl_indítás_letöltés_folyamatban"</string>
     <string name="bta_installer_available_versions">Támogatott BTA verziók</string>
     <string name="bta_installer_untested_versions">Le nem tesztelt BTA verziók</string>
     <string name="bta_installer_nightly_versions">Nightly BTA verziók</string>
-    <string name="newdl_extracting_native_libraries">Natív kónyvtárak kicsomagolása (%d/%d)</string>
+    <string name="newdl_extracting_native_libraries">Natív kónyvtárak kicsomagolása (%1$d/%2$d)</string>
     <string name="toast_not_available_demo">Ez a funkció nem elérhető a demó módban</string>
     <string name="preference_renderer_mobileglues_settings">MobileGlues renderelő beállítások</string>
     <string name="mg_renderer_glsl_cache">Maximum GLSL cache méret</string>

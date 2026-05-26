@@ -27,7 +27,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">ক্যাশ ফাইল পরিষ্কার করা হচ্ছে</string>
     <string name="mcl_launch_downloading">%s ডাউনলোড হচ্ছে</string>
-    <string name="mcl_launch_downloading_progress">"%s (%.2f এমবি / %.2f এমবি) ডাউনলোড হচ্ছে"</string>
+    <string name="mcl_launch_downloading_progress">"%1$s (%2$.2f এমবি / %3$.2f এমবি) ডাউনলোড হচ্ছে"</string>
     <string name="mcl_launch_download_assets">রিসোর্স ডাউনলোড করার জন্য প্রস্তুতি করা হচ্ছে</string>
     <string name="mcl_options">অপশনসমূহ</string>
     <string name="mcl_setting_title_use_surface_view">বিকল্প সারফেস রেন্ডারিং ব্যবহার করুন</string>

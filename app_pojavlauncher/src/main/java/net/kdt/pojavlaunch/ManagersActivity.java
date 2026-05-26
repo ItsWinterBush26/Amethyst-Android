@@ -14,7 +14,7 @@ import net.kdt.pojavlaunch.managers.ResourceManager;
 import net.kdt.pojavlaunch.managers.ShaderManager;
 import net.kdt.pojavlaunch.managers.WorldManager;
 import net.kdt.pojavlaunch.examples.ExampleManagers;
-import net.kdt.pojavlaunch.browser.AssetSearchActivity;
+import net.kdt.pojavlaunch.AssetSearchActivity;
 
 public class ManagersActivity extends AppCompatActivity {
     private TextView statusView;
@@ -76,7 +76,7 @@ public class ManagersActivity extends AppCompatActivity {
                 runOnUiThread(() -> statusView.append(getString(R.string.status_no_storage) + "\n"));
                 return;
             }
-            ResourceManager.install(ResourceManager.search("vanilla", 1).get(0), (d, t) -> runOnUiThread(() -> statusView.append("Resource progress " + d + "/" + t + "\n")));
+            ResourceManager.install(new ResourceManager.ResourceInstallRequest(ResourceManager.search("vanilla", 1).get(0), (d, t) -> runOnUiThread(() -> statusView.append("Resource progress " + d + "/" + t + "\n"))));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

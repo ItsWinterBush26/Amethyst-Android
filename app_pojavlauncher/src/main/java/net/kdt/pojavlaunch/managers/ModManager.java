@@ -6,6 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModManager {
+    private static ModManager sInstance;
+    private String modsDir;
+
+    public static ModManager getInstance() {
+        if (sInstance == null) sInstance = new ModManager();
+        return sInstance;
+    }
+
+    public void init(android.content.Context ctx) {
+        modsDir = Tools.DIR_GAME_NEW + "/mods";
+    }
+
     public static final String MODS_DIR = Tools.DIR_GAME_NEW + "/mods";
 
     public static List<RemoteAsset> search(String query, int limit) throws IOException {
