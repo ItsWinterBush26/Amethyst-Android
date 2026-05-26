@@ -60,3 +60,5 @@ public class ExampleManagers {
             Log.e(TAG, "runModExample failed", e);
         }
     }
+
+}
