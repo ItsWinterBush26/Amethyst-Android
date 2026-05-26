@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Search Assets"
-        android:textAppearance="?android:attr/textAppearanceHeadline6"
+        android:textAppearance="?attr/textAppearanceHeadline6"
         android:paddingBottom="12dp" />
 
     <LinearLayout
