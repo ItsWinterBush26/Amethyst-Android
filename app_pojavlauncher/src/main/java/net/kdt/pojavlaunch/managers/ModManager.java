@@ -18,9 +18,10 @@ public class ModManager {
     }
 
     public static void install(RemoteAsset asset, DownloadManager.ProgressListener listener) throws IOException {
+        if (asset.downloadUrl == null) throw new IllegalArgumentException("Asset download URL is null");
         File modsDir = new File(MODS_DIR);
         net.kdt.pojavlaunch.utils.FileUtils.ensureDirectory(modsDir);
-        File out = new File(modsDir, asset.name.replaceAll("\\s+","_") + ".jar");
-        ModrinthManager.download(asset, out, listener);
+        File out = new File(modsDir, asset.name.replaceAll("\\\\s+","_") + ".jar");
+        DownloadManager.downloadToFile(asset.downloadUrl, out, asset.sha1, listener);
     }
 }

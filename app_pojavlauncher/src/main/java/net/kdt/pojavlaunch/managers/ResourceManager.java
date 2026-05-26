@@ -39,11 +39,11 @@ public class ResourceManager {
     }
 
     public static void install(ResourceInstallRequest req) throws IOException {
+        if (req.asset.downloadUrl == null) throw new IllegalArgumentException("Asset download URL is null");
         File targetDir = new File(RESOURCEPACKS_DIR);
         FileUtils.ensureDirectory(targetDir);
-
         File out = new File(targetDir, req.asset.name.replaceAll("\\\\s+","_") + ".zip");
-        ModrinthManager.download(req.asset, out, req.listener);
+        DownloadManager.downloadToFile(req.asset.downloadUrl, out, req.asset.sha1, req.listener);
     }
 
     public static class ResourceInstallRequest {

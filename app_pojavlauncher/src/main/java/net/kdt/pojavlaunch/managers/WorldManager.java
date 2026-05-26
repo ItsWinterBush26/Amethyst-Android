@@ -42,12 +42,12 @@ public class WorldManager {
 
         File tmp = File.createTempFile("world_", ".tmp");
         try {
-            ModrinthManager.download(asset, tmp, listener);
+            if (asset.downloadUrl == null) throw new IllegalArgumentException("Asset download URL is null");
+            DownloadManager.downloadToFile(asset.downloadUrl, tmp, asset.sha1, listener);
             // If it is a zip, extract it
             if (isZipFile(tmp)) {
                 unzipTo(tmp, saves);
             } else {
-                // If it's a folder packaged differently, try moving
                 File dest = new File(saves, asset.name.replaceAll("\\\\s+","_"));
                 Files.move(tmp.toPath(), dest.toPath());
             }

@@ -117,6 +117,12 @@
             android:label="@string/manager_title"
             android:windowSoftInputMode="adjustResize" />
 
+        <activity
+            android:name=".browser.AssetSearchActivity"
+            android:exported="true"
+            android:label="@string/asset_browser_title"
+            android:windowSoftInputMode="adjustResize" />
+
         <provider
             android:name=".scoped.FolderProvider"
             android:authorities="@string/storageProviderAuthorities"

@@ -51,6 +51,13 @@
             android:text="Run All Manager Examples"
             android:layout_marginTop="8dp" />
 
+        <Button
+            android:id="@+id/button_open_asset_browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Asset Browser"
+            android:layout_marginTop="8dp" />
+
         <ProgressBar
             android:id="@+id/manager_progress_bar"
             android:layout_width="wrap_content"

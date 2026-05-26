@@ -1,5 +1,6 @@
 package net.kdt.pojavlaunch;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import net.kdt.pojavlaunch.managers.ResourceManager;
 import net.kdt.pojavlaunch.managers.ShaderManager;
 import net.kdt.pojavlaunch.managers.WorldManager;
 import net.kdt.pojavlaunch.examples.ExampleManagers;
+import net.kdt.pojavlaunch.browser.AssetSearchActivity;
 
 public class ManagersActivity extends AppCompatActivity {
     private TextView statusView;
@@ -31,12 +33,14 @@ public class ManagersActivity extends AppCompatActivity {
         Button shaderButton = findViewById(R.id.button_run_shader_example);
         Button worldButton = findViewById(R.id.button_run_world_example);
         Button allButton = findViewById(R.id.button_run_all_examples);
+        Button browserButton = findViewById(R.id.button_open_asset_browser);
 
         modButton.setOnClickListener(v -> runTask("Running mod example", this::runModExample));
         resourceButton.setOnClickListener(v -> runTask("Running resource example", this::runResourceExample));
         shaderButton.setOnClickListener(v -> runTask("Running shader example", this::runShaderExample));
         worldButton.setOnClickListener(v -> runTask("Running world example", this::runWorldExample));
         allButton.setOnClickListener(v -> runTask("Running all manager examples", ExampleManagers::runAllExamples));
+        browserButton.setOnClickListener(v -> startActivity(new Intent(this, AssetSearchActivity.class)));
     }
 
     private void runTask(String description, Runnable task) {

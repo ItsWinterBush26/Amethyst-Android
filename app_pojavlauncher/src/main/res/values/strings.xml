@@ -100,8 +100,33 @@
     <string name="button_run_shader_example">Run Shader Example</string>
     <string name="button_run_world_example">Run World Example</string>
     <string name="button_run_all_examples">Run All Manager Examples</string>
+    <string name="asset_browser_title">Asset Browser</string>
     <string name="status_waiting">Waiting...</string>
     <string name="status_no_storage">Game storage not initialized.</string>
+    <string name="curseforge_api_key" translatable="false">YOUR_CURSEFORGE_API_KEY_HERE</string>
+    <string name="search_assets_title">Asset search results</string>
+    <string name="source_modrinth">Modrinth</string>
+    <string name="source_curseforge">CurseForge</string>
+    <string name="asset_type_mods">Mods</string>
+    <string name="asset_type_resources">Resource Packs</string>
+    <string name="asset_type_shaders">Shaders</string>
+    <string name="asset_type_worlds">Worlds</string>
+    <string name="action_download">Download</string>
+    <string name="status_searching">Downloading...</string>
+    <string name="status_no_query">Enter a search query first.</string>
+    <string name="status_download_started">Downloading</string>
+    <string name="status_download_completed">Download completed</string>
+    <string name="status_download_failed">Download failed</string>
+    <string-array name="asset_search_sources">
+        <item>@string/source_modrinth</item>
+        <item>@string/source_curseforge</item>
+    </string-array>
+    <string-array name="asset_search_types">
+        <item>@string/asset_type_mods</item>
+        <item>@string/asset_type_resources</item>
+        <item>@string/asset_type_shaders</item>
+        <item>@string/asset_type_worlds</item>
+    </string-array>
 
     <!-- MainActivity: strings -->
     <string name="mcn_exit_title">Application/Game exited with code %d, check latestlog.txt for more details.</string>

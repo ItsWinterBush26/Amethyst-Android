@@ -35,9 +35,10 @@ public class ShaderManager {
     }
 
     public static void install(RemoteAsset asset, DownloadManager.ProgressListener listener) throws IOException {
+        if (asset.downloadUrl == null) throw new IllegalArgumentException("Asset download URL is null");
         File targetDir = new File(SHADERPACKS_DIR);
         FileUtils.ensureDirectory(targetDir);
         File out = new File(targetDir, asset.name.replaceAll("\\\\s+","_") + ".zip");
-        ModrinthManager.download(asset, out, listener);
+        DownloadManager.downloadToFile(asset.downloadUrl, out, asset.sha1, listener);
     }
 }
