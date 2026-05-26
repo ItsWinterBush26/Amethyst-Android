@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/manager_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Managers"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/button_run_mod_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Mod Example" />
+
+        <Button
+            android:id="@+id/button_run_resource_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Resource Example"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_run_shader_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Shader Example"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_run_world_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run World Example"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/button_run_all_examples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run All Manager Examples"
+            android:layout_marginTop="8dp" />
+
+        <ProgressBar
+            android:id="@+id/manager_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/manager_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Ready"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+</ScrollView>

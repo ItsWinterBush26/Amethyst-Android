@@ -111,6 +111,11 @@
             android:launchMode="singleTop"
             android:process=":game"
             android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ManagersActivity"
+            android:exported="true"
+            android:label="@string/manager_title"
+            android:windowSoftInputMode="adjustResize" />
 
         <provider
             android:name=".scoped.FolderProvider"

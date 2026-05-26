@@ -94,6 +94,14 @@
     <string name="global_retry">Retry</string>
     <string name="global_default">Default</string>
     <string name="global_off">Off</string>
+    <string name="manager_title">Managers</string>
+    <string name="button_run_mod_example">Run Mod Example</string>
+    <string name="button_run_resource_example">Run Resource Example</string>
+    <string name="button_run_shader_example">Run Shader Example</string>
+    <string name="button_run_world_example">Run World Example</string>
+    <string name="button_run_all_examples">Run All Manager Examples</string>
+    <string name="status_waiting">Waiting...</string>
+    <string name="status_no_storage">Game storage not initialized.</string>
 
     <!-- MainActivity: strings -->
     <string name="mcn_exit_title">Application/Game exited with code %d, check latestlog.txt for more details.</string>

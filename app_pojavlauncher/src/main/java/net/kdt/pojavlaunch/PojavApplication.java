@@ -23,6 +23,10 @@ import net.kdt.pojavlaunch.prefs.LauncherPreferences;
 import net.kdt.pojavlaunch.tasks.AsyncAssetManager;
 import net.kdt.pojavlaunch.utils.*;
 import net.kdt.pojavlaunch.utils.FileUtils;
+import net.kdt.pojavlaunch.managers.ModManager;
+import net.kdt.pojavlaunch.managers.ResourceManager;
+import net.kdt.pojavlaunch.managers.ShaderManager;
+import net.kdt.pojavlaunch.managers.WorldManager;
 
 public class PojavApplication extends Application {
 	public static final String CRASH_REPORT_TAG = "PojavCrashReport";
@@ -76,6 +80,11 @@ public class PojavApplication extends Application {
 												.concat("/x86");
 			}
 			AsyncAssetManager.unpackRuntime(getAssets());
+			// Initialize managers
+			ModManager.getInstance().init(this);
+			ResourceManager.getInstance().init(this);
+			ShaderManager.getInstance().init(this);
+			WorldManager.getInstance().init(this);
 		} catch (Throwable throwable) {
 			Intent ferrorIntent = new Intent(this, FatalErrorActivity.class);
 			ferrorIntent.putExtra("throwable", throwable);
